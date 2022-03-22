@@ -1,0 +1,442 @@
+.pozadina{
+    background-image:url('pozadinaa.jpg');
+    background-color:rgba(204, 204, 204, 0.452);
+    min-width: 100%;
+    min-height: 50%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+html,
+body {
+ 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /*background-color: black;*/
+  flex-direction: column;
+  /*background: rgb(147, 128, 231);*/
+  background: rgba(99, 96, 116, 0.9)
+}
+.Naziv{
+
+    flex-grow: 1;
+    order: 1;
+    height: 150px;
+    text-align: center;
+    font-size: 100px;
+    color: black;
+    font-style: oblique;
+    background-color: rgba(99, 96, 116, 0.9);   
+    
+}
+.ClanZaglavljeLabela{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(99, 96, 116, 0.9);
+    color: black;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding-right: 5px;
+    border-right:2px solid goldenrod;
+    
+    text-decoration:underline ;
+}
+.ClanZaglavlje{
+    height: 40px;
+    border-style: solid ;
+    border-bottom-color: goldenrod;
+    border-top-color: goldenrod;
+
+    /*border-bottom-color: rgb(101, 100, 156);
+    border-top-color: rgb(85, 88, 119);*/
+
+    order:1;
+    
+    background-color:rgba(99, 96, 116, 0.9);
+}
+.GlavniKontejner {
+    
+    margin: 50px;
+    padding: 20px;
+    order: 3;
+    background: rgba(99, 96, 116, 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    height: fit-content;
+    width: fit-content;
+}
+
+.FormaForma
+{
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 100%;
+    
+
+}
+.VrstaZaglavlje, .TreningZaglavlje
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border:  2px solid goldenrod;
+    padding: 5px;
+    width: 100%;
+    flex-grow: 1;
+
+}
+.VrstaForma{
+    
+   
+    display: flex;   
+    flex-grow: 1;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5cm 0.5cm 0.5cm 0.5cm;
+    
+    
+}
+.TreningForma{
+    
+   
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
+    
+    align-items: center;
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1cm 1cm 1cm 1cm;
+    
+}
+.forma{
+    display: flex;
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 10px;
+    border:  2px solid goldenrod;
+    
+    align-items: center;
+  
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1cm 1cm 1cm 1cm;
+
+}
+.l1, .l3, .l5
+{
+    font-weight: bold;
+    
+}
+.l2, .l4, .l6
+{
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-style: dotted ;
+    text-decoration-color: goldenrod ;
+}
+.divTrening
+{
+    display: flex;
+    flex-grow: 1;
+    border:  2px solid goldenrod;
+    margin: 0.2cm 0.2cm 0.2cm 0.2cm;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+.glavni
+{
+    display: flex;
+    flex-grow: 1;
+    border:  2px solid goldenrod;
+    flex-direction: row;
+    
+    width: fit-content;
+    height: fit-content;
+    
+
+
+}
+.crtajTreningFormu
+{
+    display: flex;
+    flex-direction: column;
+}
+.btnZakazi, .btnObrisi, .btnIzmeni
+{
+    display: flex;
+    flex-grow: 1;
+    border:2px  solid black;
+    background-color: rgba(99, 96, 116, 0.9);
+}
+
+.ClanForma{
+    padding: 10px;
+    max-width: 700px;
+    min-width: 310px;
+    display: flex;
+    flex-direction:column ;
+    flex-flow: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: goldenrod 2px solid;
+    background-color: black;
+    justify-content: space-between;
+    flex-grow: 1;
+  
+}
+.ClanRed{
+    height: 1cm;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+
+.ClanDugmici{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 2px;
+    flex-grow: 1;
+    color:white;
+}
+
+
+
+.btnOk
+{
+    background: goldenrod;
+    color:black;
+    border: 2px solid black;
+}
+
+
+
+.PretraziDugme, .SaznajDugme
+{
+    color: goldenrod;
+    background-color: black;
+
+}
+
+.TrenerForma{
+   flex-grow: 1;
+    padding: 10px;
+    background-color: lightsteelblue;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin: 0.5cm;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    
+}
+.TrenerLabel{
+   /* flex-grow: 1;*/
+    text-align: center;
+    font-size:large;
+    margin-bottom: 0.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+.clanTrener
+{
+    color:white;
+}
+.ClanLabela, .LabelaTrener
+{
+    /*color:goldenrod;*/
+    color: rgb(199, 185, 140);
+}
+.ClanNaslov{
+   /* flex-grow: 1;*/
+    text-align: center;
+    font-size:large;
+    margin-bottom: 0.5cm;
+}
+.TrenerRedovitb{
+    flex-grow: 1;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width:fit-content;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.TrenerRedovi{
+    display: flex;
+    flex-grow: 1;
+    width:100%;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+}
+.tbNVremeTren,.tbNDanTren{
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    flex-grow: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+.TrenerDugmici{
+    display: flex;
+    /*flex-grow: 1;*/
+    justify-content: space-around;
+    margin-bottom: 2px;
+    background-color: rgb(196, 165, 86);
+}
+
+
+
+.KupiDugme{
+    margin-right: 15px;
+    justify-content: end;
+    display: flex;
+}
+.KupiKartuDugme{
+  /*  flex-grow: 1;*/
+    color: white;
+    background-color: black;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.RedUSali{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+.PrikazForma{
+    flex-grow: 1;
+    flex-direction: row;
+}
+.PrikazSale{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+}
+/*.LabelaSedista{
+    text-align: center;
+    border-radius: 2px;
+    border-style:  solid;
+    border-color:goldenrod;
+    margin: 1px;
+    width: 0.5cm;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}*/
+table,td,tr,.redUtabeli{
+   
+    flex-grow: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    /*width: fit-content;*/
+    background-color:white;
+    border:2px  solid black;
+    background: radial-gradient(circle, rgba(192,210,231,1) 0%, rgb(189, 163, 97) 100%);
+
+}
+
+table{
+    flex-grow: 1;
+    display: table;
+    width: 100%;
+}
+.TabelRow{
+    display: table; 
+}
+th{
+    flex-grow: 1;
+    background-color: black;
+    color: rgb(199, 185, 140);
+    border: 6px solid black;
+}
+.TabelaTermini, .TrenerTabela{
+    display: table;
+    flex-grow: 1;
+    border: 2px solid goldenrod;
+    background-color: radial-gradient(circle, rgba(192,210,231,1) 0%, goldenrod 100%);
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.TabelaPodaci{
+    display: table;
+    flex-grow: 1;
+    margin-top: 5px;
+}
+.TabelaTerminPodaci{
+    display: table;
+    flex-grow: 1;
+    margin-top: 5px;
+}
+table{
+    flex-grow: 1;
+    margin-top: 0.5cm;
+    border-collapse: collapse;
+}
+
+
+.comboBox,.comboBox1, .comboBox2,.comboBox3,.comboBox4,.comboBox5,.comboBox6,.comboBox7,.Trenertb{
+    width:50%;
+    flex-grow: 1;
+    display: flex;
+    height: 1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 10px;
+    background: radial-gradient(circle, rgba(192,210,231,1) 0%, rgb(189, 163, 97) 100%);
+}
+tbody{
+    flex-grow: 1;
+    width: 100%;
+}
+.ClanTextBoxIme,.ClanTextBoxPrezime,.ClanTextBoxemail,.ClanTextBoxlozinka,.ClanTextBoxIme,.ClanTextBoxPrezime{
+    height: 1cm;
+    width: fit-content;
+    margin: 10px;
+    flex-grow: 1;
+    display: flex;
+    background: radial-gradient(circle, rgba(192,210,231,1) 0%, rgb(189, 163, 97) 100%);
+}
+
+label{
+    flex-grow: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    width: 30%;
+    margin-top:20px;
+    justify-content: stretch;
+    
+}
+
+button{
+    
+    height: 1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 10px;
+    background-color: gray;
+}

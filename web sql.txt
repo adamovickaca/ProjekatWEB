@@ -1,0 +1,158 @@
+INSERT Teretana (Naziv, Adresa, KontakTelefon, Email) VALUES ('Kangoo', 'Bulevar Zorana Djindjica 4', '018352654', 'kangoo@gmail.com');
+INSERT Teretana (Naziv, Adresa, KontakTelefon, Email) VALUES ('Gym town', 'Kraljevica Marka 9', '018377654', 'gymtown@gmail.com');
+
+
+INSERT Vrsta(Naziv, teretanaID) VALUES ('individualni', 1);
+INSERT Vrsta(Naziv, teretanaID) VALUES ('grupni', 2);
+INSERT Vrsta(Naziv, teretanaID) VALUES ('individualni', 2);
+INSERT Vrsta(Naziv, teretanaID) VALUES ('grupni', 1);
+
+
+INSERT Clan (Ime, Prezime, KorisnickoIme, Lozinka, teretanaID,Email, trener) VALUES ('Milica', 'Aleksic', 'micialeksic', '12345678', 1, 'micialeksic@gmail.com', 0);
+INSERT Clan (Ime, Prezime, KorisnickoIme, Lozinka, teretanaID,Email, trener) VALUES ('Katarina', 'Adamovic', 'adamovickaca', '078123456', 1, 'adamovickaca@gmail.com', 1);
+INSERT Clan (Ime, Prezime, Lozinka, teretanaID, Email, trener) VALUES ('Nikola', 'Ivanov', 'nik45678', 1, 'nik98@hotmail.com', 1);
+INSERT Clan (Ime, Prezime, Lozinka, teretanaID, Email, trener) VALUES ('Marko', 'Markovic', 'mare1234', 2, 'mare88@hotmail.com', 1);
+INSERT Clan (Ime, Prezime, Lozinka, teretanaID, Email, trener) VALUES ('Nina', 'Nikic', 'ninanina', 2, 'ninan@hotmail.com', 1);
+
+
+INSERT Trening (Naziv, vrstaID, MaxBrMesta, Opis, Trajanje) VALUES ('Kangoo jumps', 2, 10, 'Kangoo....', 60);
+INSERT Trening (Naziv, vrstaID, MaxBrMesta, Opis, Trajanje) VALUES ('Kardio trening', 1, 10, 'Kangoo....', 50);
+INSERT Trening (Naziv, vrstaID, MaxBrMesta, Opis, Trajanje) VALUES ('Kangoo jumps', 3, 10, 'Kangoo....', 40);
+INSERT Trening (Naziv, vrstaID, MaxBrMesta, Opis, Trajanje) VALUES ('Kardio trening', 4, 10, 'Kangoo....', 50);
+
+UPDATE Trening set MaxBrMesta=1 where id=4;
+
+INSERT Termin (Dan, Vreme, BrZauzetih, trenerID,teretanaID,treningID,Zauzeto) VALUES ('Ponedeljak', '19:30', 5, 4, 1, 1, 0);
+INSERT Termin (Dan, Vreme, BrZauzetih, trenerID,teretanaID,treningID,Zauzeto) VALUES ('Utorak', '15:30', 1, 4, 1, 2, 0);
+INSERT Termin (Dan, Vreme, BrZauzetih, trenerID,teretanaID,treningID,Zauzeto) VALUES ('Ponedeljak', '19:30', 5, 4, 2, 3, 0);
+INSERT Termin (Dan, Vreme, BrZauzetih, trenerID,teretanaID,treningID,Zauzeto) VALUES ('Utorak', '15:30', 1, 4, 2, 4, 0);
+
+
+UPDATE Trening set Opis=' Kangoo Jumps oprema vam omogućava da nemate direktan udarac na kičmu, kolena i zglobove i samim tim štiti vaše telo.
+ Ovim treningom možete smanjiti obim struka, celulit, podići gluteus i poboljšati svoj imunitet. ' where id=1;
+
+UPDATE Trening set Opis='Kardio trening je najefikasniji način za skidanje masnih naslaga, postizanje i održavanja kondicije. Kardio-vežbe su neophodne 
+za svaki efikasan program treninga jer podstiču sagorevanje masnoća ali su ujedno dobre i za celokupno zdravlje organizma.' where id=4;
+
+
+INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('HIIT', 1, 'HIIT (High Intensity Interval Training) treninzi se sastoje od kratkih ali
+ jakih intervala fizičke aktivnosti koji su praćeni adekvatnim odmorom između njih. Trajanje intervala može da bude u opsegu od 10–60 sekundi.', 30);
+ 
+INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('HIIT', 3, 'HIIT (High Intensity Interval Training) treninzi se sastoje od kratkih ali
+ jakih intervala fizičke aktivnosti koji su praćeni adekvatnim odmorom između njih. Trajanje intervala može da bude u opsegu od 10–60 sekundi.', 30);
+
+ INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Tezinski trening', 1, 'Težinski trening jača kosti, zglobove, povećava vašu snagu na treningu i van njega, 
+ vašu energiju u toku dana, pomaže u zaštiti od povreda, podiže samopouzdanje.', 60);
+
+ INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Tezinski trening', 3, 'Težinski trening jača kosti, zglobove, povećava vašu snagu na treningu i van njega, 
+ vašu energiju u toku dana, pomaže u zaštiti od povreda, podiže samopouzdanje.', 60);
+
+ INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Prenatalni pilates', 1, 'Pilates kao izbor vezbanja u trudnoci idealan je jer poboljšava cirkulaciju, 
+ smanjuje tegobe nastale hormonski promenama i rastom stomaka, poboljšava raspolozenje, odlično je rešenje za “teške noge” sklone oticanju i grčevima.', 45);
+
+
+ INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Body pump', 2, 'BODYPUMP je jedinstvena formula kojom cete oblikovati figuru i izgubiti višak masnoce, 
+ a ujedno ojacati telo i samopouzdanje podici na viši nivo.', 50); 
+
+  INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Body pump', 4, 'BODYPUMP je jedinstvena formula kojom cete oblikovati figuru i izgubiti višak masnoce, 
+ a ujedno ojacati telo i samopouzdanje podici na viši nivo.', 50); 
+
+INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Power flex', 2, 'PowerFlex program kombinuje vežbe snage, dizanje tegova, vežbe sa svojom težinom usklađene sa
+  dahom, joga asane ( položaji ), izdržljivost.', 50);
+
+
+ INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Kick box',4, 'Kick-box je vid treninga uz koji ćete unaprediti svoju snagu i kondiciju a ujedno i naučiti 
+ tehniku Kick-box borilačke discipline.', 55);
+
+  INSERT Trening (Naziv, vrstaID, Opis, Trajanje) VALUES ('Kick box',2, 'Kick-box je vid treninga uz koji ćete unaprediti svoju snagu i kondiciju a ujedno i naučiti 
+ tehniku Kick-box borilačke discipline.', 55);
+
+
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','10:00', 10, 8, 1, 3, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','18:00', 10, 8, 1, 3, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Sreda','10:00', 10, 8, 1, 3, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','18:00', 10, 8, 1, 3, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Petak','10:00', 10, 8, 1, 3, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','10:00', 10, 9, 2, 1, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','18:00', 10, 9, 2, 1, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Sreda','10:00', 10, 9, 2, 1, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','18:00', 10, 9, 2, 1, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Petak','10:00', 10, 9, 2, 1, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','19:00', 7, 8, 1, 15, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','17:00', 7, 8, 1, 15, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','20:00', 7, 8, 1, 15, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','14:00', 7, 8, 1, 15, 0);
+
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','19:00', 5, 9, 2, 14, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','17:00', 5, 9, 2, 14, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','20:00', 5, 9, 2, 14, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','14:00', 5, 9, 2, 14, 0);
+
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','13:00', 1, 4, 1, 2, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','11:00', 1, 4, 1, 2, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','17:00',1, 4, 1, 2, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','20:00', 1, 4, 1, 2, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','14:00', 1, 4, 1, 2, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','13:00', 1, 10, 2, 4, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','11:00', 1, 10, 2, 4, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','17:00',1, 10, 2, 4, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','20:00',1, 10, 2, 4, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','14:00',1, 10, 2, 4, 0);
+
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','13:00', 1, 8, 1, 5, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','11:00',1, 8, 1, 5, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','17:00',1, 8, 1, 5, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','20:00',1, 8, 1, 5, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','14:00', 1, 8, 1, 5, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','13:00', 1, 9, 2, 6, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','11:00', 1, 9, 2, 6, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','17:00',1, 9, 2, 6, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','20:00',1, 9, 2, 6, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','14:00',1, 9, 2, 6, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','09:00', 1, 8, 1, 9, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','09:00', 1, 8, 1, 9, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','09:00', 1, 8, 1, 9, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','09:00', 1, 8, 1, 9, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','09:00', 1, 8, 1, 9, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','09:00', 1, 9, 2, 10, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','09:00', 1, 9, 2, 10, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','09:00', 1, 9, 2, 10, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','09:00', 1, 9, 2, 10, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','09:00', 1, 9, 2, 10, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','12:00', 1, 4, 1, 13, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','12:00', 1, 4, 1, 13, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','12:00', 1, 4, 1, 13, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','12:00', 1, 4, 1, 13, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','12:00', 1, 4, 1, 13, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','08:00', 4, 10, 2, 16, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','08:00', 4, 10, 2, 16, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','08:00', 4, 10, 2, 16, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','08:00', 4, 10, 2, 16, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','08:00', 4, 10, 2, 16, 0);
+
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','21:00', 3, 8, 1, 17, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','21:00', 3, 8, 1, 17, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','21:00', 3, 8, 1, 17, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','21:00', 3, 8, 1, 17, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','21:00', 3, 8, 1, 17, 0);
+
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Ponedeljak','21:00', 3, 9, 2, 18, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Utorak','21:00', 3, 9, 2, 18, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Cetvrtak','21:00', 3, 9, 2, 18, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Subota','21:00', 3, 9, 2, 18, 0);
+INSERT Termin (Dan, Vreme, SlobodnaMesta, trenerID, teretanaID, treningID, Zauzeto) VALUES ('Nedelja','21:00', 3, 9, 2, 18, 0);
+
+
